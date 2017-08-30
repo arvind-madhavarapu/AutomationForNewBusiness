@@ -14,7 +14,7 @@ namespace AutomationForNewBusiness
         public IWebDriver InitializeDriver()
         {
             //_driver = new ChromeDriver(@"C:\Automation");
-            _driver = new ChromeDriver();
+            _driver = new ChromeDriver(); 
             DesiredCapabilities capabilities = new DesiredCapabilities();
             capabilities = DesiredCapabilities.Chrome(); 
             capabilities.SetCapability(CapabilityType.BrowserName, "chrome");
