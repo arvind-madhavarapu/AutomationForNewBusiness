@@ -19,7 +19,7 @@ namespace AutomationForNewBusiness
             capabilities = DesiredCapabilities.Chrome();
             capabilities.SetCapability(CapabilityType.BrowserName, "chrome");
             capabilities.SetCapability(CapabilityType.Platform, new Platform(PlatformType.XP));
-            _driver = new RemoteWebDriver(new Uri("http://10.1.10.6:5558/wd/hub"), capabilities);
+            _driver = new RemoteWebDriver(new Uri("http://10.1.10.6:5557/wd/hub"), capabilities);
             _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             _driver.Manage().Window.Maximize();
             return _driver;
