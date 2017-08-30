@@ -16,7 +16,7 @@ namespace AutomationForNewBusiness
             //_driver = new ChromeDriver(@"C:\Automation");
             _driver = new ChromeDriver();
             DesiredCapabilities capabilities = new DesiredCapabilities();
-            capabilities = DesiredCapabilities.Chrome();
+            capabilities = DesiredCapabilities.Chrome(); 
             capabilities.SetCapability(CapabilityType.BrowserName, "chrome");
             capabilities.SetCapability(CapabilityType.Platform, new Platform(PlatformType.XP));
             _driver = new RemoteWebDriver(new Uri("http://10.1.10.6:5557/wd/hub"), capabilities);
